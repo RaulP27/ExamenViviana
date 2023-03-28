@@ -52,7 +52,7 @@ public class estudianteServicio {
     //Eliminar por Curso
     public String eliminar(int curso){
 
-        Boolean cond = false
+        Boolean cond = false;
         String eliminacion = "";
         ArrayList<Estudiante> listaCurso = new ArrayList<>();
 
@@ -64,12 +64,12 @@ public class estudianteServicio {
         }
 
         if(cond == true){
+            eliminacion = "Eliminacion exitosa";
             for(Estudiante e:listaCurso){
                 listaEst.remove(e);
             }
-            eliminacion = "Eliminacion exitosa";
         }else{
-            eliminacion = "No se ha reliazado ninguna eliminacion";
+            eliminacion = "No se ha realizado ninguna eliminacion";
         }
 
         return eliminacion;
